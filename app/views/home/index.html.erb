@@ -1,2 +1,11 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1><%= @name %></h1>
+<p><%= @race %></p>
+<p><%= @description %></p>
+<h2>Ses curiosités</h2>
+<table class="table table-bordered">
+    <tr>
+        <% @stuff.each do |s| %>
+            <td><%= s %></td>
+        <% end %>
+    </tr>
+</table>
